@@ -19,3 +19,52 @@ const busImg = document.querySelector(".intro img");
 window.addEventListener("resize", () => {
   busImg.src = "img/newbus.jpg";
 });
+
+//dblclick events
+const destinationTitles = document.querySelector(".content-pick");
+destinationTitles.addEventListener("dblclick", () => {
+  destinationTitles.style.backgroundColor = "lightblue";
+});
+
+//mouseenter event
+const letsgoImg = document.querySelector(".img-content img");
+letsgoImg.addEventListener("mouseenter", () => {
+  letsgoImg.style.transform = "scale(1.2)";
+  letsgoImg.style.transition = "all 0.3s";
+});
+
+//mouseleave event
+
+letsgoImg.addEventListener("mouseleave", () => {
+  letsgoImg.style.transform = "scale(1)";
+  letsgoImg.style.transition = "all 0.3s";
+});
+
+//mousedown event
+
+const navEffect = document.querySelectorAll("a");
+navEffect.forEach(navitem => {
+  navitem.addEventListener("mousedown", () => {
+    navitem.style.color = "hotpink";
+  });
+});
+
+//scroll event
+
+const bodyBackground = document.querySelector(".destination");
+window.addEventListener("scroll", () => {
+  bodyBackground.style.backgroundColor = "lightgray";
+});
+
+//wheel event
+
+const selectText = document.querySelector(".intro p");
+selectText.addEventListener("wheel", () => {
+  selectText.style.color = "red";
+});
+
+//cut event
+const footerText = document.querySelector(".footer p");
+footerText.addEventListener("cut", () => {
+  footerText.style.backgroundColor = "lightblue";
+});

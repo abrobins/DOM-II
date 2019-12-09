@@ -68,3 +68,22 @@ const footerText = document.querySelector(".footer p");
 footerText.addEventListener("cut", () => {
   footerText.style.backgroundColor = "lightblue";
 });
+
+//stop propagation event
+
+const funTitle = document.querySelector(".destination");
+funTitle.addEventListener("click", () => {
+  funTitle.style.backgroundColor = "yellow";
+});
+
+const funButton = document.querySelector(".destination .btn");
+funButton.addEventListener("click", e => {
+  funButton.style.backgroundColor = "blue";
+  e.stopPropagation();
+});
+
+const stopLink = document.querySelector(".nav-link");
+stopLink.addEventListener("click", event => {
+  event.preventDefault();
+  console.log("link stopped!");
+});

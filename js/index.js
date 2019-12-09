@@ -1,7 +1,5 @@
 // Your code goes here
 
-// gsap.to("h1.logo-heading", { duration: 1, opacity: 0.3 });
-// gsap.to("h1.logo-heading", { duration: 1, x: 300, ease: "bounce" });
 gsap.to("h1.logo-heading", { duration: 1, x: 600, ease: "bounce" });
 gsap.to("nav", { duration: 1, x: -480, ease: "bounce" });
 // add mouseover event

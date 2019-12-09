@@ -1,7 +1,11 @@
 // Your code goes here
 
+//greensock code below
 gsap.to("h1.logo-heading", { duration: 1, x: 600, ease: "bounce" });
 gsap.to("nav", { duration: 1, x: -480, ease: "bounce" });
+gsap.from("#adventure", { duration: 3, x: 300, opacity: 0, scale: 0.5 });
+gsap.from("#fun", { duration: 3, x: -300, opacity: 0, scale: 0.5 });
+
 // add mouseover event
 const h1Tag = document.querySelector(".logo-heading");
 h1Tag.addEventListener("mouseover", () => {
